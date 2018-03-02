@@ -1,0 +1,34 @@
+package com.redhat.demo.qlb.loan_application.rules;
+
+
+import com.redhat.demo.qlb.loan_application.model.Applicant ;
+import com.redhat.demo.qlb.loan_application.model.Loan;
+
+// declare any global variables here
+// TODO:add a proper logging layer
+// import org.apache.log4j.Logger
+// global Logger LOGGER;
+
+rule "Setting default values on Applicant"
+	dialect "mvel"
+	ruleflow-group "initialisation-rules"
+	no-loop true
+	when
+	    applicant : Applicant( )
+	then
+	    System.out.println("Rule fired : [" + drools.getRule().getName()+"]");
+	    applicant.setEligible( true );
+	    applicant.setMonthlyIncome (applicant.getYearlyIncome()/12);
+end
+
+rule "Setting default values on Loan"
+	dialect "mvel"
+	ruleflow-group "initialisation-rules"
+	no-loop true
+	when
+	    loan : Loan( )
+	then
+	    System.out.println("Rule fired : [" + drools.getRule().getName()+"]");
+	    loan.setApproved( false );
+	    
+end
