@@ -1,0 +1,36 @@
+{
+  "lookup": "default-stateless-ksession",
+  "commands": [
+    {
+      "insert": {
+        "object": {
+          "com.redhat.demo.qlb.loan_application.model.Applicant": {
+            "creditScore":410,
+            "name":"Lucien Bramard",
+            "age":40,
+            "yearlyIncome":90000
+          }
+        },
+        "out-identifier":"applicant"
+      }
+    },
+    {
+      "insert": {
+        "object": {
+          "com.redhat.demo.qlb.loan_application.model.Loan": {
+            "amount":250000,
+            "duration":10
+          }
+        },
+        "out-identifier":"loan"
+      }
+    },
+    {
+      "start-process" : {
+        "processId" : "loan-application.loan-application-decision-flow",
+        "parameter" : [ ],
+        "out-identifier" : null
+      }
+    }
+  ]
+}
