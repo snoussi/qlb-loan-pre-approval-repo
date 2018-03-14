@@ -14,8 +14,8 @@ In order to import and deploy this demo, you need to install [Red Hat Decision M
 
 ## Supporting videos 
 
-### Import a Project
+### Import a Project (Click to watch video )
 [![Import a Project](https://i.vimeocdn.com/video/688474089.webp?mw=1800&mh=1125&q=70)](https://vimeo.com/259895728 "Import a Project")
 
-### Build, Deploy and Test using Swagger
+### Build, Deploy and Test using Swagger (Click to watch video )
 [![Build, Deploy and Test using Swagger](https://i.vimeocdn.com/video/688474578.webp?mw=1920&mh=1080&q=70)](https://vimeo.com/259896609 "Build, Deploy and Test using Swagger")
