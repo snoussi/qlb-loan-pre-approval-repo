@@ -2,4 +2,7 @@
   <kbase name="default-kbase" default="true" eventProcessingMode="cloud" equalsBehavior="equality">
     <ksession name="default-stateless-ksession" type="stateless" default="true" clockType="realtime"/>
   </kbase>
+  <kbase name="test-kbase" default="false" eventProcessingMode="stream" equalsBehavior="identity">
+    <ksession name="statef-session" type="stateful" default="true" clockType="pseudo"/>
+  </kbase>
 </kmodule>
