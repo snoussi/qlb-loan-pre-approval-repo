@@ -1,0 +1,8 @@
+<kmodule xmlns="http://www.drools.org/xsd/kmodule" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <kbase name="default-kbase" default="true" eventProcessingMode="cloud" equalsBehavior="equality">
+    <ksession name="default-stateless-ksession" type="stateless" default="true" clockType="realtime"/>
+  </kbase>
+  <kbase name="test-kbase" default="false" eventProcessingMode="stream" equalsBehavior="identity">
+    <ksession name="stateful-ksession" type="stateful" default="true" clockType="pseudo"/>
+  </kbase>
+</kmodule>
