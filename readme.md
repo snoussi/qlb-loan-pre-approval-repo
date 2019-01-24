@@ -4,7 +4,7 @@ This demo project showcases the different rule authoring tools used to define co
 
 ![qlb rhdm 7.2 demo](global/qlb_rhdm.png?raw=true)
 
-![qlb rhdm 7.2 decision flow](src/main/resources/com/redhat/demo/qlb/loan_application/rules/loan-application.decision-flow-svg.svg)
+![qlb rhdm 7.2 decision flow](global/decision-flow.png)
 
 The decision logic is then deployed and exposed as a decision service.
 
