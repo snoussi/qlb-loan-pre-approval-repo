@@ -4,7 +4,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.redhat.demo.qlb</groupId>
   <artifactId>loan-application</artifactId>
-  <version>1.0</version>
+  <version>1.0-SNAPSHOT</version>
   <name>loan-application</name>
   <description>RHDM 7.3 demo - Loan application decision service for Quick Loan Bank</description>
   <properties>
