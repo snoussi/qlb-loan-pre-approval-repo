@@ -1,0 +1,18 @@
+package com.redhat.demo.qlb.loan_application.rules;
+
+import com.redhat.demo.utils.RuleConfig;
+
+rule "config group"
+when
+    RuleConfig($ruleGroup : ruleGroup)
+then
+    kcontext.getKnowledgeRuntime().getAgenda().getAgendaGroup($ruleGroup).setFocus();
+end
+
+// start a rule flow (aka process)
+rule "start process"
+when
+    RuleConfig($startProcess : startProcess)
+then
+    kcontext.getKieRuntime().startProcess($startProcess);
+end
