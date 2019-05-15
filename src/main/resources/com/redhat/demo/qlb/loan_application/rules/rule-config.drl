@@ -4,15 +4,24 @@ import com.redhat.demo.utils.RuleConfig;
 
 rule "config group"
 when
-    RuleConfig($ruleGroup : ruleGroup)
+    RuleConfig($ruleGroup : ruleGroup != null)
 then
+    System.out.println("config group: "+$ruleGroup);
     kcontext.getKnowledgeRuntime().getAgenda().getAgendaGroup($ruleGroup).setFocus();
 end
 
 // start a rule flow (aka process)
-// rule "start process"
-// when
-//     RuleConfig($startProcess : startProcess)
-// then
-//     kcontext.getKieRuntime().startProcess($startProcess);
-// end
+rule "start process"
+when
+    RuleConfig($startProcess : startProcess != null)
+then
+    System.out.println("start proc: "+$startProcess);
+    kcontext.getKnowledgeRuntime().startProcess($startProcess);
+end
+
+rule "test"
+when
+    $o : Object()
+then
+    System.out.println("wm: "+$o);
+end
