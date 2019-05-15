@@ -10,9 +10,9 @@ then
 end
 
 // start a rule flow (aka process)
-rule "start process"
-when
-    RuleConfig($startProcess : startProcess)
-then
-    kcontext.getKieRuntime().startProcess($startProcess);
-end
+// rule "start process"
+// when
+//     RuleConfig($startProcess : startProcess)
+// then
+//     kcontext.getKieRuntime().startProcess($startProcess);
+// end

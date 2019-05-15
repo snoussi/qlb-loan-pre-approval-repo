@@ -6,7 +6,6 @@ package com.redhat.demo.utils;
 public class RuleConfig {
 
     private String ruleGroup;
-    private String startProcess;
 
     /**
      * @return the ruleGroup
@@ -20,19 +19,5 @@ public class RuleConfig {
      */
     public void setRuleGroup(String ruleGroup) {
         this.ruleGroup = ruleGroup;
-    }
-
-    /**
-     * @return the startProcess
-     */
-    public String getStartProcess() {
-        return startProcess;
-    }
-
-    /**
-     * @param startProcess the startProcess to set
-     */
-    public void setStartProcess(String startProcess) {
-        this.startProcess = startProcess;
     }
 }
