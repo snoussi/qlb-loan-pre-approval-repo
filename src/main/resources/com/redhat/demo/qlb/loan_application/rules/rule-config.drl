@@ -12,6 +12,7 @@ end
 
 // start a rule flow (aka process)
 rule "start process"
+salience -100
 when
     RuleConfig($startProcess : startProcess != null)
 then
