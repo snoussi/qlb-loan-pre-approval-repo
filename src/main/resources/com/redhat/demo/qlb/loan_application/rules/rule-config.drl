@@ -13,6 +13,7 @@ end
 // start a rule flow (aka process)
 rule "start process"
 salience -100
+enabled false
 when
     RuleConfig($startProcess : startProcess != null)
 then
@@ -21,6 +22,7 @@ then
 end
 
 rule "test"
+enabled false
 when
     $o : Object()
 then
