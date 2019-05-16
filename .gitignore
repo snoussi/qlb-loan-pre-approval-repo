@@ -1,9 +1,18 @@
-**/.classpath
-**/.project
-.settings/
-**/.externalToolBuilders
-/bin/
-**/target/
-*.jpage
-**/project.repositories
+/target
+/local
+
+# Eclipse, Netbeans and IntelliJ files
+/.*
+!.gitignore
+!.gitattributes
+!.travis.yml
+/nbproject
+/*.ipr
+/*.iws
+/*.iml
+
+# Repository wide ignore mac DS_Store files
+.DS_Store
+
+# uml tool
 *.ucls
