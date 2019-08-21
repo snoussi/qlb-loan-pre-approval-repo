@@ -3,14 +3,6 @@
     <repository>
       <include>true</include>
       <metadata>
-        <id>jboss-ga-repository</id>
-        <url>file:///usr/local/Cellar/maven/3.3.9/libexec</url>
-        <source>SETTINGS</source>
-      </metadata>
-    </repository>
-    <repository>
-      <include>true</include>
-      <metadata>
         <id>redhat-ga-repository</id>
         <url>http://maven.repository.redhat.com/ga/</url>
         <source>SETTINGS</source>
@@ -27,25 +19,9 @@
     <repository>
       <include>true</include>
       <metadata>
-        <id>jboss-ga-plugin-repository</id>
-        <url>file:///usr/local/Cellar/maven/3.3.9/libexec</url>
-        <source>SETTINGS</source>
-      </metadata>
-    </repository>
-    <repository>
-      <include>true</include>
-      <metadata>
         <id>jboss-plugins</id>
         <url>http://repository.jboss.org/nexus/content/groups/public-jboss/</url>
         <source>SETTINGS</source>
-      </metadata>
-    </repository>
-    <repository>
-      <include>true</include>
-      <metadata>
-        <id>local</id>
-        <url>/Users/msnoussi/.m2/repository</url>
-        <source>LOCAL</source>
       </metadata>
     </repository>
     <repository>
@@ -67,6 +43,14 @@
     <repository>
       <include>true</include>
       <metadata>
+        <id>jboss-ga-repository</id>
+        <url>file:///usr/local/Cellar/maven/3.6.1/libexec</url>
+        <source>SETTINGS</source>
+      </metadata>
+    </repository>
+    <repository>
+      <include>true</include>
+      <metadata>
         <id>jboss-snapshot-plugins</id>
         <url>http://repository.jboss.org/nexus/content/groups/public-jboss/</url>
         <source>SETTINGS</source>
@@ -78,6 +62,22 @@
         <id>jboss</id>
         <url>http://repository.jboss.org/nexus/content/groups/public-jboss/</url>
         <source>SETTINGS</source>
+      </metadata>
+    </repository>
+    <repository>
+      <include>true</include>
+      <metadata>
+        <id>jboss-ga-plugin-repository</id>
+        <url>file:///usr/local/Cellar/maven/3.6.1/libexec</url>
+        <source>SETTINGS</source>
+      </metadata>
+    </repository>
+    <repository>
+      <include>true</include>
+      <metadata>
+        <id>local</id>
+        <url>/Users/snoussi/.m2/repository</url>
+        <source>LOCAL</source>
       </metadata>
     </repository>
   </repositories>
