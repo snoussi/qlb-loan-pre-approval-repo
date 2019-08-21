@@ -5,8 +5,8 @@
   <groupId>com.redhat.demo.qlb</groupId>
   <artifactId>loan-application</artifactId>
   <version>1.0</version>
-  <name>loan-application</name>
-  <description>RHDM 7.2 demo - Loan application decision service for Quick Loan Bank</description>
+  <name>loan-pre-approval</name>
+  <description>RHDM 7.4 demo - Loan Pre-approval Decision Service for Quick Loan Bank</description>
   <dependencyManagement>
     <dependencies>
       <dependency>
