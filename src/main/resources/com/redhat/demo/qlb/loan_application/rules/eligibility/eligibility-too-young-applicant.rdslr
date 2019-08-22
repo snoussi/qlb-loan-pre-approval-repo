@@ -3,7 +3,7 @@ package com.redhat.demo.qlb.loan_application.rules.eligibility;
 import com.redhat.demo.qlb.loan_application.model.Applicant;
 import com.redhat.demo.qlb.loan_application.model.Loan;
 
-rule "Eligibility-too-young-applicant"
+rule "eligibility-too-young-applicant"
 	dialect "mvel"
 	ruleflow-group "eligibility-rules"
 	when
