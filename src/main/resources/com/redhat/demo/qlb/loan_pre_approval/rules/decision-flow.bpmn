@@ -12,7 +12,7 @@
   <bpmn2:itemDefinition id="__2C1B4D2A-B7F6-4917-87A1-0A94B10E5C21_namespaceInputXItem" structureRef="java.lang.String"/>
   <bpmn2:itemDefinition id="__2C1B4D2A-B7F6-4917-87A1-0A94B10E5C21_modelInputXItem" structureRef="java.lang.String"/>
   <bpmn2:itemDefinition id="__2C1B4D2A-B7F6-4917-87A1-0A94B10E5C21_decisionInputXItem" structureRef="java.lang.String"/>
-  <bpmn2:process id="loan-pre-approval.decision-flow" drools:packageName="com.redhat.demo.qlb.loan_application.rules" drools:version="1.0" drools:adHoc="false" name="decision-flow" isExecutable="true">
+  <bpmn2:process id="loan-pre-approval.decision-flow" drools:packageName="com.redhat.demo.qlb.loan_pre_approval.rules" drools:version="1.0" drools:adHoc="false" name="decision-flow" isExecutable="true">
     <bpmn2:sequenceFlow id="_21DA12AE-9C64-45F1-8785-7356EF93953A" sourceRef="_2C1B4D2A-B7F6-4917-87A1-0A94B10E5C21" targetRef="_2B4E528F-E986-49CA-B389-8D0ED415412F"/>
     <bpmn2:sequenceFlow id="_04711A91-0299-4654-8F77-BFC503ABFB2F" sourceRef="_2B4E528F-E986-49CA-B389-8D0ED415412F" targetRef="_A0AC052A-3662-4729-85D4-111A0FFA93DD"/>
     <bpmn2:sequenceFlow id="_03170706-C54C-4292-9276-410A97A3640D" sourceRef="_6F03BD23-4A5B-4C59-9262-FF2317D7919A" targetRef="_2C1B4D2A-B7F6-4917-87A1-0A94B10E5C21"/>

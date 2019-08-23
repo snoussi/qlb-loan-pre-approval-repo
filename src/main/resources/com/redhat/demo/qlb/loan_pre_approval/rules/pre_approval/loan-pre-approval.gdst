@@ -199,14 +199,14 @@
   <imports>
     <imports>
       <org.kie.soup.project.datamodel.imports.Import>
-        <type>com.redhat.demo.qlb.loan_application.model.Applicant</type>
+        <type>com.redhat.demo.qlb.loan_pre_approval.model.Applicant</type>
       </org.kie.soup.project.datamodel.imports.Import>
       <org.kie.soup.project.datamodel.imports.Import>
-        <type>com.redhat.demo.qlb.loan_application.model.Loan</type>
+        <type>com.redhat.demo.qlb.loan_pre_approval.model.Loan</type>
       </org.kie.soup.project.datamodel.imports.Import>
     </imports>
   </imports>
-  <packageName>com.redhat.demo.qlb.loan_application.rules.approval</packageName>
+  <packageName>com.redhat.demo.qlb.loan_pre_approval.rules.approval</packageName>
   <tableFormat>EXTENDED_ENTRY</tableFormat>
   <hitPolicy>NONE</hitPolicy>
   <data>

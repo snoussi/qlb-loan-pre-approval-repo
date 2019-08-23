@@ -138,14 +138,14 @@
   <lastRunResult>2019-01-23 21:18:27.811 UTC</lastRunResult>
   <rules/>
   <inclusive>false</inclusive>
-  <packageName>com.redhat.demo.qlb.loan_application</packageName>
+  <packageName>com.redhat.demo.qlb.loan_pre_approval</packageName>
   <imports>
     <imports>
       <org.kie.soup.project.datamodel.imports.Import>
-        <type>com.redhat.demo.qlb.loan_application.model.Applicant</type>
+        <type>com.redhat.demo.qlb.loan_pre_approval.model.Applicant</type>
       </org.kie.soup.project.datamodel.imports.Import>
       <org.kie.soup.project.datamodel.imports.Import>
-        <type>com.redhat.demo.qlb.loan_application.model.Loan</type>
+        <type>com.redhat.demo.qlb.loan_pre_approval.model.Loan</type>
       </org.kie.soup.project.datamodel.imports.Import>
     </imports>
   </imports>

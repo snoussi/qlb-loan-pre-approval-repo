@@ -1,7 +1,7 @@
 package com.redhat.demo.qlb.loan_application.rules.eligibility;
 
-import com.redhat.demo.qlb.loan_application.model.Applicant;
-import com.redhat.demo.qlb.loan_application.model.Loan;
+import com.redhat.demo.qlb.loan_pre_approval.model.Applicant;
+import com.redhat.demo.qlb.loan_pre_approval.model.Loan;
 
 rule "eligibility-too-old-applicant"
 	dialect "mvel"
