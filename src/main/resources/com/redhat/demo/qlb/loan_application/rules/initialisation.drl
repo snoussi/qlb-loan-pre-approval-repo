@@ -8,7 +8,7 @@ import org.slf4j.LoggerFactory;
 global Logger LOGGER;
 // global String LOG_LEVEL;
 
-rule "Setting default values on Applicant"
+rule "setting default values on Applicant"
 	dialect "mvel"
 	ruleflow-group "initialisation-rules"
 	no-loop true
@@ -20,7 +20,7 @@ rule "Setting default values on Applicant"
         LOGGER.info("Rule fired : [" + drools.getRule().getName()+"]");
 end
 
-rule "Setting default values on Loan"
+rule "setting default values on Loan"
 	dialect "mvel"
 	ruleflow-group "initialisation-rules"
 	no-loop true
@@ -36,7 +36,7 @@ end
 /**
 Configures the session's logger global.
 **/
-rule "_CONFIG_ Logger Configuration"
+rule "_CONFIG_ Logger configuration"
     salience 100000
     ruleflow-group "initialisation-rules"
     when
