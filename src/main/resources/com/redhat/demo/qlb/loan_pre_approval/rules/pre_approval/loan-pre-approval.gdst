@@ -16,8 +16,8 @@
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </typedDefaultValue>
-      <hideColumn>true</hideColumn>
-      <width>100</width>
+      <hideColumn>false</hideColumn>
+      <width>137</width>
       <attribute>ruleflow-group</attribute>
       <reverseOrder>false</reverseOrder>
       <useRowNumber>false</useRowNumber>
@@ -223,7 +223,7 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>approval-rules</valueString>
+        <valueString>pre-approval-rules</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -284,7 +284,7 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>approval-rules</valueString>
+        <valueString>pre-approval-rules</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -345,7 +345,7 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>approval-rules</valueString>
+        <valueString>pre-approval-rules</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -406,7 +406,7 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>approval-rules</valueString>
+        <valueString>pre-approval-rules</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -468,7 +468,7 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>approval-rules</valueString>
+        <valueString>pre-approval-rules</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -531,7 +531,7 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>approval-rules</valueString>
+        <valueString>pre-approval-rules</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -594,7 +594,7 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>approval-rules</valueString>
+        <valueString>pre-approval-rules</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -657,7 +657,7 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>approval-rules</valueString>
+        <valueString>pre-approval-rules</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -720,7 +720,7 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>approval-rules</valueString>
+        <valueString>pre-approval-rules</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -783,7 +783,7 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>approval-rules</valueString>
+        <valueString>pre-approval-rules</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -846,7 +846,7 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>approval-rules</valueString>
+        <valueString>pre-approval-rules</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
