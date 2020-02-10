@@ -1,6 +1,6 @@
-<ScenarioSimulationModel version="1.3">
+<ScenarioSimulationModel version="1.8">
   <simulation>
-    <simulationDescriptor>
+    <scesimModelDescriptor>
       <factMappings>
         <FactMapping>
           <expressionElements/>
@@ -14,6 +14,8 @@
           </factIdentifier>
           <className>java.lang.Integer</className>
           <factAlias>#</factAlias>
+          <factMappingValueType>NOT_EXPRESSION</factMappingValueType>
+          <columnWidth>70.0</columnWidth>
         </FactMapping>
         <FactMapping>
           <expressionElements/>
@@ -27,27 +29,8 @@
           </factIdentifier>
           <className>java.lang.String</className>
           <factAlias>Scenario description</factAlias>
-        </FactMapping>
-        <FactMapping>
-          <expressionElements>
-            <ExpressionElement>
-              <step>RuleConfig</step>
-            </ExpressionElement>
-            <ExpressionElement>
-              <step>ruleGroup</step>
-            </ExpressionElement>
-          </expressionElements>
-          <expressionIdentifier>
-            <name>0|1</name>
-            <type>GIVEN</type>
-          </expressionIdentifier>
-          <factIdentifier>
-            <name>0|1</name>
-            <className>com.redhat.demo.utils.RuleConfig</className>
-          </factIdentifier>
-          <className>java.lang.String</className>
-          <factAlias>RuleConfig</factAlias>
-          <expressionAlias>rule-group</expressionAlias>
+          <factMappingValueType>NOT_EXPRESSION</factMappingValueType>
+          <columnWidth>300.0</columnWidth>
         </FactMapping>
         <FactMapping>
           <expressionElements>
@@ -59,37 +42,216 @@
             </ExpressionElement>
           </expressionElements>
           <expressionIdentifier>
-            <name>1557935744879</name>
+            <name>1|1</name>
             <type>GIVEN</type>
           </expressionIdentifier>
           <factIdentifier>
-            <name>1557935744879</name>
+            <name>1|1</name>
             <className>com.redhat.demo.qlb.loan_application.model.Applicant</className>
           </factIdentifier>
           <className>int</className>
           <factAlias>Applicant</factAlias>
           <expressionAlias>age</expressionAlias>
+          <factMappingValueType>NOT_EXPRESSION</factMappingValueType>
+          <columnWidth>572.0</columnWidth>
         </FactMapping>
         <FactMapping>
           <expressionElements>
             <ExpressionElement>
-              <step>Applicant</step>
+              <step>Loan</step>
             </ExpressionElement>
             <ExpressionElement>
-              <step>eligible</step>
+              <step>approved</step>
             </ExpressionElement>
           </expressionElements>
           <expressionIdentifier>
-            <name>1557935966042</name>
+            <name>1|2</name>
+            <type>EXPECT</type>
+          </expressionIdentifier>
+          <factIdentifier>
+            <name>1|2</name>
+            <className>com.redhat.demo.qlb.loan_application.model.Loan</className>
+          </factIdentifier>
+          <className>boolean</className>
+          <factAlias>Loan</factAlias>
+          <expressionAlias>approved</expressionAlias>
+          <factMappingValueType>NOT_EXPRESSION</factMappingValueType>
+          <columnWidth>572.0</columnWidth>
+        </FactMapping>
+      </factMappings>
+    </scesimModelDescriptor>
+    <scesimData>
+      <Scenario>
+        <factMappingValues>
+          <FactMappingValue>
+            <factIdentifier>
+              <name>Scenario description</name>
+              <className>java.lang.String</className>
+            </factIdentifier>
+            <expressionIdentifier>
+              <name>Description</name>
+              <type>OTHER</type>
+            </expressionIdentifier>
+            <rawValue class="string">Approve</rawValue>
+          </FactMappingValue>
+          <FactMappingValue>
+            <factIdentifier>
+              <name>#</name>
+              <className>java.lang.Integer</className>
+            </factIdentifier>
+            <expressionIdentifier>
+              <name>Index</name>
+              <type>OTHER</type>
+            </expressionIdentifier>
+            <rawValue class="string">1</rawValue>
+          </FactMappingValue>
+          <FactMappingValue>
+            <factIdentifier>
+              <name>1|1</name>
+              <className>com.redhat.demo.qlb.loan_application.model.Applicant</className>
+            </factIdentifier>
+            <expressionIdentifier>
+              <name>1|1</name>
+              <type>GIVEN</type>
+            </expressionIdentifier>
+            <rawValue class="string">50</rawValue>
+          </FactMappingValue>
+          <FactMappingValue>
+            <factIdentifier>
+              <name>1|2</name>
+              <className>com.redhat.demo.qlb.loan_application.model.Loan</className>
+            </factIdentifier>
+            <expressionIdentifier>
+              <name>1|2</name>
+              <type>EXPECT</type>
+            </expressionIdentifier>
+            <rawValue class="string">true</rawValue>
+          </FactMappingValue>
+        </factMappingValues>
+      </Scenario>
+      <Scenario>
+        <factMappingValues>
+          <FactMappingValue>
+            <factIdentifier>
+              <name>Scenario description</name>
+              <className>java.lang.String</className>
+            </factIdentifier>
+            <expressionIdentifier>
+              <name>Description</name>
+              <type>OTHER</type>
+            </expressionIdentifier>
+            <rawValue class="string">Rejected too young</rawValue>
+          </FactMappingValue>
+          <FactMappingValue>
+            <factIdentifier>
+              <name>#</name>
+              <className>java.lang.Integer</className>
+            </factIdentifier>
+            <expressionIdentifier>
+              <name>Index</name>
+              <type>OTHER</type>
+            </expressionIdentifier>
+            <rawValue class="string">2</rawValue>
+          </FactMappingValue>
+          <FactMappingValue>
+            <factIdentifier>
+              <name>1|1</name>
+              <className>com.redhat.demo.qlb.loan_application.model.Applicant</className>
+            </factIdentifier>
+            <expressionIdentifier>
+              <name>1|1</name>
+              <type>GIVEN</type>
+            </expressionIdentifier>
+            <rawValue class="string">17</rawValue>
+          </FactMappingValue>
+          <FactMappingValue>
+            <factIdentifier>
+              <name>1|2</name>
+              <className>com.redhat.demo.qlb.loan_application.model.Loan</className>
+            </factIdentifier>
+            <expressionIdentifier>
+              <name>1|2</name>
+              <type>EXPECT</type>
+            </expressionIdentifier>
+            <rawValue class="string">false</rawValue>
+          </FactMappingValue>
+        </factMappingValues>
+      </Scenario>
+      <Scenario>
+        <factMappingValues>
+          <FactMappingValue>
+            <factIdentifier>
+              <name>Scenario description</name>
+              <className>java.lang.String</className>
+            </factIdentifier>
+            <expressionIdentifier>
+              <name>Description</name>
+              <type>OTHER</type>
+            </expressionIdentifier>
+            <rawValue class="string">Rejected too old</rawValue>
+          </FactMappingValue>
+          <FactMappingValue>
+            <factIdentifier>
+              <name>#</name>
+              <className>java.lang.Integer</className>
+            </factIdentifier>
+            <expressionIdentifier>
+              <name>Index</name>
+              <type>OTHER</type>
+            </expressionIdentifier>
+            <rawValue class="string">3</rawValue>
+          </FactMappingValue>
+          <FactMappingValue>
+            <factIdentifier>
+              <name>1|1</name>
+              <className>com.redhat.demo.qlb.loan_application.model.Applicant</className>
+            </factIdentifier>
+            <expressionIdentifier>
+              <name>1|1</name>
+              <type>GIVEN</type>
+            </expressionIdentifier>
+            <rawValue class="string">71</rawValue>
+          </FactMappingValue>
+          <FactMappingValue>
+            <factIdentifier>
+              <name>1|2</name>
+              <className>com.redhat.demo.qlb.loan_application.model.Loan</className>
+            </factIdentifier>
+            <expressionIdentifier>
+              <name>1|2</name>
+              <type>EXPECT</type>
+            </expressionIdentifier>
+            <rawValue class="string">false</rawValue>
+          </FactMappingValue>
+        </factMappingValues>
+      </Scenario>
+    </scesimData>
+  </simulation>
+  <background>
+    <scesimModelDescriptor>
+      <factMappings>
+        <FactMapping>
+          <expressionElements>
+            <ExpressionElement>
+              <step>RuleConfig</step>
+            </ExpressionElement>
+            <ExpressionElement>
+              <step>ruleGroup</step>
+            </ExpressionElement>
+          </expressionElements>
+          <expressionIdentifier>
+            <name>1|1</name>
             <type>GIVEN</type>
           </expressionIdentifier>
           <factIdentifier>
-            <name>1557935744879</name>
-            <className>com.redhat.demo.qlb.loan_application.model.Applicant</className>
+            <name>1|1</name>
+            <className>com.redhat.demo.utils.RuleConfig</className>
           </factIdentifier>
-          <className>java.lang.Boolean</className>
-          <factAlias>Applicant</factAlias>
-          <expressionAlias>eligible</expressionAlias>
+          <className>java.lang.String</className>
+          <factAlias>RuleConfig</factAlias>
+          <expressionAlias>ruleGroup</expressionAlias>
+          <factMappingValueType>NOT_EXPRESSION</factMappingValueType>
+          <columnWidth>504.66666666666663</columnWidth>
         </FactMapping>
         <FactMapping>
           <expressionElements>
@@ -101,162 +263,89 @@
             </ExpressionElement>
           </expressionElements>
           <expressionIdentifier>
-            <name>1557935777046</name>
+            <name>1581371227345</name>
             <type>GIVEN</type>
           </expressionIdentifier>
           <factIdentifier>
-            <name>1557935777046</name>
+            <name>1581371227345</name>
             <className>com.redhat.demo.qlb.loan_application.model.Loan</className>
           </factIdentifier>
           <className>long</className>
           <factAlias>Loan</factAlias>
           <expressionAlias>amount</expressionAlias>
+          <factMappingValueType>NOT_EXPRESSION</factMappingValueType>
+          <columnWidth>504.66666666666663</columnWidth>
         </FactMapping>
         <FactMapping>
           <expressionElements>
             <ExpressionElement>
-              <step>Applicant</step>
+              <step>Loan</step>
             </ExpressionElement>
             <ExpressionElement>
-              <step>eligible</step>
+              <step>approved</step>
             </ExpressionElement>
           </expressionElements>
           <expressionIdentifier>
-            <name>0|2</name>
-            <type>EXPECT</type>
+            <name>1581372019223</name>
+            <type>GIVEN</type>
           </expressionIdentifier>
-          <factIdentifier reference="../../FactMapping[4]/factIdentifier"/>
-          <className>java.lang.Boolean</className>
-          <factAlias>Applicant</factAlias>
-          <expressionAlias>eligible</expressionAlias>
+          <factIdentifier>
+            <name>1581371227345</name>
+            <className>com.redhat.demo.qlb.loan_application.model.Loan</className>
+          </factIdentifier>
+          <className>boolean</className>
+          <factAlias>Loan</factAlias>
+          <expressionAlias>approved</expressionAlias>
+          <factMappingValueType>NOT_EXPRESSION</factMappingValueType>
+          <columnWidth>504.66666666666663</columnWidth>
         </FactMapping>
       </factMappings>
-      <dmoSession>default</dmoSession>
-      <type>RULE</type>
-    </simulationDescriptor>
-    <scenarios>
-      <Scenario>
+    </scesimModelDescriptor>
+    <scesimData>
+      <BackgroundData>
         <factMappingValues>
           <FactMappingValue>
-            <factIdentifier reference="../../../../../simulationDescriptor/factMappings/FactMapping[2]/factIdentifier"/>
-            <expressionIdentifier reference="../../../../../simulationDescriptor/factMappings/FactMapping[2]/expressionIdentifier"/>
-            <rawValue class="string">too young</rawValue>
-          </FactMappingValue>
-          <FactMappingValue>
-            <factIdentifier reference="../../../../../simulationDescriptor/factMappings/FactMapping/factIdentifier"/>
-            <expressionIdentifier reference="../../../../../simulationDescriptor/factMappings/FactMapping/expressionIdentifier"/>
-            <rawValue class="string">1</rawValue>
-          </FactMappingValue>
-          <FactMappingValue>
-            <factIdentifier reference="../../../../../simulationDescriptor/factMappings/FactMapping[3]/factIdentifier"/>
-            <expressionIdentifier reference="../../../../../simulationDescriptor/factMappings/FactMapping[3]/expressionIdentifier"/>
+            <factIdentifier>
+              <name>1|1</name>
+              <className>com.redhat.demo.utils.RuleConfig</className>
+            </factIdentifier>
+            <expressionIdentifier>
+              <name>1|1</name>
+              <type>GIVEN</type>
+            </expressionIdentifier>
             <rawValue class="string">eligibility-rules</rawValue>
           </FactMappingValue>
           <FactMappingValue>
-            <factIdentifier reference="../../../../../simulationDescriptor/factMappings/FactMapping[4]/factIdentifier"/>
-            <expressionIdentifier reference="../../../../../simulationDescriptor/factMappings/FactMapping[4]/expressionIdentifier"/>
-            <rawValue class="string">17</rawValue>
-          </FactMappingValue>
-          <FactMappingValue>
-            <factIdentifier reference="../../../../../simulationDescriptor/factMappings/FactMapping[4]/factIdentifier"/>
-            <expressionIdentifier reference="../../../../../simulationDescriptor/factMappings/FactMapping[7]/expressionIdentifier"/>
-            <rawValue class="string">false</rawValue>
-          </FactMappingValue>
-          <FactMappingValue>
-            <factIdentifier reference="../../../../../simulationDescriptor/factMappings/FactMapping[6]/factIdentifier"/>
-            <expressionIdentifier reference="../../../../../simulationDescriptor/factMappings/FactMapping[6]/expressionIdentifier"/>
+            <factIdentifier>
+              <name>1581371227345</name>
+              <className>com.redhat.demo.qlb.loan_application.model.Loan</className>
+            </factIdentifier>
+            <expressionIdentifier>
+              <name>1581371227345</name>
+              <type>GIVEN</type>
+            </expressionIdentifier>
             <rawValue class="string">1</rawValue>
           </FactMappingValue>
           <FactMappingValue>
-            <factIdentifier reference="../../../../../simulationDescriptor/factMappings/FactMapping[5]/factIdentifier"/>
-            <expressionIdentifier reference="../../../../../simulationDescriptor/factMappings/FactMapping[5]/expressionIdentifier"/>
+            <factIdentifier>
+              <name>1581371227345</name>
+              <className>com.redhat.demo.qlb.loan_application.model.Loan</className>
+            </factIdentifier>
+            <expressionIdentifier>
+              <name>1581372019223</name>
+              <type>GIVEN</type>
+            </expressionIdentifier>
             <rawValue class="string">true</rawValue>
           </FactMappingValue>
         </factMappingValues>
-        <simulationDescriptor reference="../../../simulationDescriptor"/>
-      </Scenario>
-      <Scenario>
-        <factMappingValues>
-          <FactMappingValue>
-            <factIdentifier reference="../../../../../simulationDescriptor/factMappings/FactMapping[2]/factIdentifier"/>
-            <expressionIdentifier reference="../../../../../simulationDescriptor/factMappings/FactMapping[2]/expressionIdentifier"/>
-            <rawValue class="string">too old</rawValue>
-          </FactMappingValue>
-          <FactMappingValue>
-            <factIdentifier reference="../../../../../simulationDescriptor/factMappings/FactMapping/factIdentifier"/>
-            <expressionIdentifier reference="../../../../../simulationDescriptor/factMappings/FactMapping/expressionIdentifier"/>
-            <rawValue class="string">2</rawValue>
-          </FactMappingValue>
-          <FactMappingValue>
-            <factIdentifier reference="../../../../../simulationDescriptor/factMappings/FactMapping[3]/factIdentifier"/>
-            <expressionIdentifier reference="../../../../../simulationDescriptor/factMappings/FactMapping[3]/expressionIdentifier"/>
-            <rawValue class="string">eligibility-rules</rawValue>
-          </FactMappingValue>
-          <FactMappingValue>
-            <factIdentifier reference="../../../../../simulationDescriptor/factMappings/FactMapping[4]/factIdentifier"/>
-            <expressionIdentifier reference="../../../../../simulationDescriptor/factMappings/FactMapping[4]/expressionIdentifier"/>
-            <rawValue class="string">71</rawValue>
-          </FactMappingValue>
-          <FactMappingValue>
-            <factIdentifier reference="../../../../../simulationDescriptor/factMappings/FactMapping[4]/factIdentifier"/>
-            <expressionIdentifier reference="../../../../../simulationDescriptor/factMappings/FactMapping[7]/expressionIdentifier"/>
-            <rawValue class="string">false</rawValue>
-          </FactMappingValue>
-          <FactMappingValue>
-            <factIdentifier reference="../../../../../simulationDescriptor/factMappings/FactMapping[6]/factIdentifier"/>
-            <expressionIdentifier reference="../../../../../simulationDescriptor/factMappings/FactMapping[6]/expressionIdentifier"/>
-            <rawValue class="string">1</rawValue>
-          </FactMappingValue>
-          <FactMappingValue>
-            <factIdentifier reference="../../../../../simulationDescriptor/factMappings/FactMapping[5]/factIdentifier"/>
-            <expressionIdentifier reference="../../../../../simulationDescriptor/factMappings/FactMapping[5]/expressionIdentifier"/>
-            <rawValue class="string">true</rawValue>
-          </FactMappingValue>
-        </factMappingValues>
-        <simulationDescriptor reference="../../../simulationDescriptor"/>
-      </Scenario>
-      <Scenario>
-        <factMappingValues>
-          <FactMappingValue>
-            <factIdentifier reference="../../../../../simulationDescriptor/factMappings/FactMapping[2]/factIdentifier"/>
-            <expressionIdentifier reference="../../../../../simulationDescriptor/factMappings/FactMapping[2]/expressionIdentifier"/>
-            <rawValue class="string">ok</rawValue>
-          </FactMappingValue>
-          <FactMappingValue>
-            <factIdentifier reference="../../../../../simulationDescriptor/factMappings/FactMapping/factIdentifier"/>
-            <expressionIdentifier reference="../../../../../simulationDescriptor/factMappings/FactMapping/expressionIdentifier"/>
-            <rawValue class="string">3</rawValue>
-          </FactMappingValue>
-          <FactMappingValue>
-            <factIdentifier reference="../../../../../simulationDescriptor/factMappings/FactMapping[3]/factIdentifier"/>
-            <expressionIdentifier reference="../../../../../simulationDescriptor/factMappings/FactMapping[3]/expressionIdentifier"/>
-            <rawValue class="string">eligibility-rules</rawValue>
-          </FactMappingValue>
-          <FactMappingValue>
-            <factIdentifier reference="../../../../../simulationDescriptor/factMappings/FactMapping[4]/factIdentifier"/>
-            <expressionIdentifier reference="../../../../../simulationDescriptor/factMappings/FactMapping[4]/expressionIdentifier"/>
-            <rawValue class="string">20</rawValue>
-          </FactMappingValue>
-          <FactMappingValue>
-            <factIdentifier reference="../../../../../simulationDescriptor/factMappings/FactMapping[4]/factIdentifier"/>
-            <expressionIdentifier reference="../../../../../simulationDescriptor/factMappings/FactMapping[7]/expressionIdentifier"/>
-            <rawValue class="string">true</rawValue>
-          </FactMappingValue>
-          <FactMappingValue>
-            <factIdentifier reference="../../../../../simulationDescriptor/factMappings/FactMapping[6]/factIdentifier"/>
-            <expressionIdentifier reference="../../../../../simulationDescriptor/factMappings/FactMapping[6]/expressionIdentifier"/>
-            <rawValue class="string">1</rawValue>
-          </FactMappingValue>
-          <FactMappingValue>
-            <factIdentifier reference="../../../../../simulationDescriptor/factMappings/FactMapping[5]/factIdentifier"/>
-            <expressionIdentifier reference="../../../../../simulationDescriptor/factMappings/FactMapping[5]/expressionIdentifier"/>
-            <rawValue class="string">true</rawValue>
-          </FactMappingValue>
-        </factMappingValues>
-        <simulationDescriptor reference="../../../simulationDescriptor"/>
-      </Scenario>
-    </scenarios>
-  </simulation>
+      </BackgroundData>
+    </scesimData>
+  </background>
+  <settings>
+    <type>RULE</type>
+    <skipFromBuild>false</skipFromBuild>
+    <stateless>false</stateless>
+  </settings>
   <imports>
     <imports>
       <Import>
