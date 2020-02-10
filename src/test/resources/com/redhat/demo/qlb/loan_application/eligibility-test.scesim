@@ -233,29 +233,6 @@
         <FactMapping>
           <expressionElements>
             <ExpressionElement>
-              <step>RuleConfig</step>
-            </ExpressionElement>
-            <ExpressionElement>
-              <step>ruleGroup</step>
-            </ExpressionElement>
-          </expressionElements>
-          <expressionIdentifier>
-            <name>1|1</name>
-            <type>GIVEN</type>
-          </expressionIdentifier>
-          <factIdentifier>
-            <name>1|1</name>
-            <className>com.redhat.demo.utils.RuleConfig</className>
-          </factIdentifier>
-          <className>java.lang.String</className>
-          <factAlias>RuleConfig</factAlias>
-          <expressionAlias>ruleGroup</expressionAlias>
-          <factMappingValueType>NOT_EXPRESSION</factMappingValueType>
-          <columnWidth>504.66666666666663</columnWidth>
-        </FactMapping>
-        <FactMapping>
-          <expressionElements>
-            <ExpressionElement>
               <step>Loan</step>
             </ExpressionElement>
             <ExpressionElement>
@@ -274,7 +251,7 @@
           <factAlias>Loan</factAlias>
           <expressionAlias>amount</expressionAlias>
           <factMappingValueType>NOT_EXPRESSION</factMappingValueType>
-          <columnWidth>504.66666666666663</columnWidth>
+          <columnWidth>757.0</columnWidth>
         </FactMapping>
         <FactMapping>
           <expressionElements>
@@ -297,24 +274,13 @@
           <factAlias>Loan</factAlias>
           <expressionAlias>approved</expressionAlias>
           <factMappingValueType>NOT_EXPRESSION</factMappingValueType>
-          <columnWidth>504.66666666666663</columnWidth>
+          <columnWidth>757.0</columnWidth>
         </FactMapping>
       </factMappings>
     </scesimModelDescriptor>
     <scesimData>
       <BackgroundData>
         <factMappingValues>
-          <FactMappingValue>
-            <factIdentifier>
-              <name>1|1</name>
-              <className>com.redhat.demo.utils.RuleConfig</className>
-            </factIdentifier>
-            <expressionIdentifier>
-              <name>1|1</name>
-              <type>GIVEN</type>
-            </expressionIdentifier>
-            <rawValue class="string">eligibility-rules</rawValue>
-          </FactMappingValue>
           <FactMappingValue>
             <factIdentifier>
               <name>1581371227345</name>
@@ -343,6 +309,7 @@
   </background>
   <settings>
     <type>RULE</type>
+    <ruleFlowGroup>eligibility-rules</ruleFlowGroup>
     <skipFromBuild>false</skipFromBuild>
     <stateless>false</stateless>
   </settings>
