@@ -27,7 +27,7 @@
     },
     {
       "start-process" : {
-        "processId" : "loan-application.loan-application-decision-flow",
+        "processId" : "loan-pre-approval.decision-flow",
         "parameter" : [ ],
         "out-identifier" : null
       }

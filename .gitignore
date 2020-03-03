@@ -16,3 +16,40 @@
 
 # uml tool
 *.ucls
+=======
+# Development File #
+node
+node_modules
+dist
+.tmp
+.sass-cache
+bower_components
+
+# Package Files #
+*.jar
+*.war
+*.ear
+*.tar
+
+# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
+hs_err_pid*
+
+# Eclipse
+.classpath
+.project
+.settings/
+
+# Intellij
+.idea/
+*.iml
+*.iws
+
+# Mac
+.DS_Store
+
+# Maven
+log/
+target/
+
+# Other
+tmp/

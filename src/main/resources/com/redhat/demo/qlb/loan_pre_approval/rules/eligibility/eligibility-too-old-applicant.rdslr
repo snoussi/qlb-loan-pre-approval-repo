@@ -1,0 +1,17 @@
+package com.redhat.demo.qlb.loan_application.rules.eligibility;
+
+import com.redhat.demo.qlb.loan_pre_approval.model.Applicant;
+import com.redhat.demo.qlb.loan_pre_approval.model.Loan;
+
+rule "eligibility-too-old-applicant"
+	dialect "mvel"
+	ruleflow-group "eligibility-rules"
+	when
+		There is an applicant
+		- that has an age more than 70 years old
+		There is a loan
+	then
+		That applicant is not eligible
+		That loan is rejected because applicant is too old
+		Log rule name
+end
