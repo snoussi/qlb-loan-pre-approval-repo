@@ -2,11 +2,6 @@ package com.redhat.demo.qlb.loan_pre_approval.rules;
 
 import com.redhat.demo.qlb.loan_pre_approval.model.Applicant ;
 import com.redhat.demo.qlb.loan_pre_approval.model.Loan;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-
-global Logger LOGGER;
-// global String LOG_LEVEL;
 
 rule "setting default values on Applicant"
 	dialect "mvel"
@@ -17,7 +12,7 @@ rule "setting default values on Applicant"
 	then
         _applicant.setEligible( true );
         _applicant.setMonthlyIncome (_applicant.getYearlyIncome()/12);
-        LOGGER.info("Rule fired : [" + drools.getRule().getName()+"]");
+        System.out.println("Rule fired : [" + drools.getRule().getName()+"]");
 end
 
 rule "setting default values on Loan"
@@ -28,22 +23,6 @@ rule "setting default values on Loan"
 	    _loan : Loan( )
 	then
         _loan.setApproved( false );
-        LOGGER.info("Rule fired : [" + drools.getRule().getName()+"]");
+        System.out.println("Rule fired : [" + drools.getRule().getName()+"]");
 	    
-end
-
-
-/**
-Configures the session's logger global.
-**/
-rule "_CONFIG_ Logger configuration"
-    salience 100000
-    ruleflow-group "initialisation-rules"
-    when
-    then
-        Logger logger = LoggerFactory.getLogger("loan-application");
-        // if (LOG_LEVEL != null){
-        //     logger.setLevel(Level.valueOf(LOG_LEVEL));
-        // }
-        drools.getWorkingMemory().setGlobal("LOGGER",logger);
 end

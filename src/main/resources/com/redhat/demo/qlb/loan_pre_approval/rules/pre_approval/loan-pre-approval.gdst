@@ -16,7 +16,7 @@
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </typedDefaultValue>
-      <hideColumn>false</hideColumn>
+      <hideColumn>true</hideColumn>
       <width>137</width>
       <attribute>ruleflow-group</attribute>
       <reverseOrder>false</reverseOrder>
@@ -155,7 +155,7 @@
       <header>Log rule name</header>
       <definition>
         <org.drools.workbench.models.datamodel.rule.FreeFormLine>
-          <text>LOGGER.info(&quot;Rule fired : [&quot; + drools.getRule().getName()+&quot;]&quot;);</text>
+          <text>System.out.println(&quot;Rule fired : [&quot; + drools.getRule().getName()+&quot;]&quot;);</text>
         </org.drools.workbench.models.datamodel.rule.FreeFormLine>
       </definition>
       <childColumns>

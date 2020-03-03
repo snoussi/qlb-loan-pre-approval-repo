@@ -4,4 +4,4 @@
 [when]There is a loan = _loan:Loan()
 [then]That applicant is not eligible = modify( _applicant ) \{ setEligible( false )\}
 [then]That loan is rejected because {message} = modify( _loan ) \{setApproved(false), setComment( "{message}" )\}
-[then]Log rule name = LOGGER.info("Rule fired : [" + drools.getRule().getName()+"]");
+[then]Log rule name = System.out.println("Rule fired : [" + drools.getRule().getName()+"]");
