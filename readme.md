@@ -1,15 +1,15 @@
 # Quick Loan Bank - Loan Pre Approval Decision Service
 
-This demo project showcases the different rule authoring tools used to define complexe  decision logic based on [Red Hat Decision Manager 7.4](https://www.redhat.com/en/technologies/jboss-middleware/businessrules).
+This demo project showcases the different rule authoring tools used to define complexe  decision logic based on [Red Hat Decision Manager 7.6](https://www.redhat.com/en/technologies/jboss-middleware/businessrules).
 
-![qlb rhdm 7.4 demo](global/qlb_rhdm.png?raw=true)
+![qlb rhdm 7.6 demo](global/qlb_rhdm.png?raw=true)
 
-![qlb rhdm 7.4 decision flow](global/decision-flow.png)
+![qlb rhdm 7.6 decision flow](global/decision-flow.png)
 
 The decision logic is then deployed and exposed as a decision service.
 
 ## Prerequisites
-In order to import and deploy this demo, you need to install [Red Hat Decision Manager 7.4](https://github.com/jbossdemocentral/rhdm7-install-demo).
+In order to import and deploy this demo, you need to install [Red Hat Decision Manager 7.6](https://github.com/jbossdemocentral/rhdm7-install-demo).
 
 
 ## Supporting videos 

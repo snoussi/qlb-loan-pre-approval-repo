@@ -1,0 +1,28 @@
+<project-repositories>
+    <repositories>
+        <repository>
+            <include>true</include>
+            <metadata>
+            <id>redhat-ga</id>
+            <url>http://maven.repository.redhat.com/ga/</url>
+            <source>SETTINGS</source>
+            </metadata>
+        </repository>
+        <repository>
+            <include>true</include>
+            <metadata>
+            <id>redhat-techpreview</id>
+            <url>http://maven.repository.redhat.com/techpreview/all/</url>
+            <source>SETTINGS</source>
+            </metadata>
+        </repository>
+        <repository>
+            <include>true</include>
+            <metadata>
+            <id>central</id>
+            <url>https://repo.maven.apache.org/maven2</url>
+            <source>PROJECT</source>
+            </metadata>
+        </repository>
+    </repositories>
+</project-repositories>

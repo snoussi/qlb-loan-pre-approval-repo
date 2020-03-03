@@ -83,16 +83,11 @@ public class Loan implements java.io.Serializable {
 		this.comment = comment;
 		this.monthlyRepayment = monthlyRepayment;
 	}
-	
+
 	@Override
-    public String toString() {
-        return "Loan{" +
-                "amount=" + amount +
-                ", duration=" + duration +
-                ", interestRate=" + interestRate +
-                ", approved=" + approved +
-                ", comment='" + comment + '\'' +
-                ", monthlyRepayment=" + monthlyRepayment +
-                '}';
-    }
+	public String toString() {
+		return String.format(
+				"Loan {amount=%s, duration=%s, interestRate=%s, approved=%s, comment=%s, monthlyRepayment=%s}", amount,
+				duration, interestRate, approved, comment, monthlyRepayment);
+	}
 }

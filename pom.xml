@@ -10,6 +10,7 @@
   <properties>
     <version.org.kie>7.30.0.Final-redhat-00003</version.org.kie>
     <ba.version>7.6.0.redhat-00004</ba.version>
+    <slf4j-version>1.7.26</slf4j-version>
     <maven.compiler.source>1.8</maven.compiler.source>
     <maven.compiler.target>1.8</maven.compiler.target>
   </properties>
@@ -38,7 +39,7 @@
     <dependency>
       <groupId>org.slf4j</groupId>
       <artifactId>slf4j-api</artifactId>
-      <scope>provided</scope>
+      <version>${slf4j-version}</version>
     </dependency>
   </dependencies>
   <build>

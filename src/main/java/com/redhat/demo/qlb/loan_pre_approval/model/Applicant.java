@@ -85,16 +85,11 @@ public class Applicant implements java.io.Serializable {
 		this.yearlyIncome = yearlyIncome;
 		this.monthlyIncome = monthlyIncome;
 	}
-	
+
 	@Override
-    public String toString() {
-        return "Applicant{" +
-                "name='" + name + '\'' +
-                ", creditScore=" + creditScore +
-                ", age=" + age +
-                ", eligible=" + eligible +
-                ", yearlyIncome=" + yearlyIncome +
-                ", monthlyIncome=" + monthlyIncome +
-                '}';
-    }
+	public String toString() {
+		return String.format(
+				"Applicant {name=%s, creditScore=%s, age=%s, eligible=%s, yearlyIncome=%s, monthlyIncome=%s}", name,
+				creditScore, age, eligible, yearlyIncome, monthlyIncome);
+	}
 }
