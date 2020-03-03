@@ -1,0 +1,16 @@
+package com.redhat.demo.qlb.loan_application.rules.eligibility;
+
+import com.redhat.demo.qlb.loan_application.model.Applicant;
+import com.redhat.demo.qlb.loan_application.model.Loan;
+
+rule "too young applicant"
+	dialect "mvel"
+	ruleflow-group "eligibility-rules"
+	when
+		The applicant has less than 18 years old
+		There is a loan
+	then
+		The applicant is not eligible
+		The loan is rejected because "applicant is too young"
+		Log rule name
+end
