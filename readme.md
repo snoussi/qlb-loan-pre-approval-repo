@@ -1,4 +1,5 @@
-# Quick Loan Bank - Loan Application Decision Service
+Quick Loan Bank - Loan Application Decision Service
+================
 
 This demo project showcases the different rule authoring tools used to define complexe  decision logic based on [Red Hat Decision Manager 7](https://www.redhat.com/en/technologies/jboss-middleware/businessrules).
 
