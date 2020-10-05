@@ -53,7 +53,7 @@
           <factAlias>Loan</factAlias>
           <expressionAlias>amount</expressionAlias>
           <factMappingValueType>NOT_EXPRESSION</factMappingValueType>
-          <columnWidth>488.3333333333333</columnWidth>
+          <columnWidth>337.66666666666663</columnWidth>
         </FactMapping>
         <FactMapping>
           <expressionElements>
@@ -76,7 +76,7 @@
           <factAlias>Loan</factAlias>
           <expressionAlias>duration</expressionAlias>
           <factMappingValueType>NOT_EXPRESSION</factMappingValueType>
-          <columnWidth>488.3333333333333</columnWidth>
+          <columnWidth>337.66666666666663</columnWidth>
         </FactMapping>
         <FactMapping>
           <expressionElements>
@@ -99,7 +99,7 @@
           <factAlias>Loan</factAlias>
           <expressionAlias>interestRate</expressionAlias>
           <factMappingValueType>NOT_EXPRESSION</factMappingValueType>
-          <columnWidth>488.3333333333333</columnWidth>
+          <columnWidth>337.66666666666663</columnWidth>
         </FactMapping>
       </factMappings>
     </scesimModelDescriptor>
@@ -264,6 +264,7 @@
   </background>
   <settings>
     <type>RULE</type>
+    <ruleFlowGroup>calculation-rules</ruleFlowGroup>
     <skipFromBuild>false</skipFromBuild>
     <stateless>false</stateless>
   </settings>
