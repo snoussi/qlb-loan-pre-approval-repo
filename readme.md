@@ -9,7 +9,7 @@ This demo project showcases the different rule authoring tools used to define co
 The decision logic is then deployed and exposed as a decision service.
 
 ## Prerequisites
-In order to import and deploy this demo, you need to install [Red Hat Decision Manager 7.7](https://github.com/jbossdemocentral/rhdm7-install-demo).
+In order to import and deploy this demo, you need to install [Red Hat Decision Manager 7.8](https://github.com/jbossdemocentral/rhdm7-install-demo).
 
 
 ## Supporting videos 
