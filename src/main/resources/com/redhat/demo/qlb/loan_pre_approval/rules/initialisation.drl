@@ -1,0 +1,28 @@
+package com.redhat.demo.qlb.loan_pre_approval.rules;
+
+import com.redhat.demo.qlb.loan_pre_approval.model.Applicant ;
+import com.redhat.demo.qlb.loan_pre_approval.model.Loan;
+
+rule "setting default values on Applicant"
+	dialect "mvel"
+	ruleflow-group "initialisation-rules"
+	no-loop true
+	when
+	    _applicant : Applicant( )
+	then
+        _applicant.setEligible( true );
+        _applicant.setMonthlyIncome (_applicant.getYearlyIncome()/12);
+        System.out.println("Rule fired : [" + drools.getRule().getName()+"]");
+end
+
+rule "setting default values on Loan"
+	dialect "mvel"
+	ruleflow-group "initialisation-rules"
+	no-loop true
+	when
+	    _loan : Loan( )
+	then
+        _loan.setApproved( false );
+        System.out.println("Rule fired : [" + drools.getRule().getName()+"]");
+	    
+end
