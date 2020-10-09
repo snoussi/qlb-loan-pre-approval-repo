@@ -1,5 +1,5 @@
 <decision-table52>
-  <tableName>loan approval</tableName>
+  <tableName>loan-pre-approval</tableName>
   <rowNumberCol>
     <hideColumn>false</hideColumn>
     <width>50</width>
@@ -12,12 +12,12 @@
   <attributeCols>
     <attribute-column52>
       <typedDefaultValue>
-        <valueString>approval-rules</valueString>
+        <valueString>pre-approval-rules</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </typedDefaultValue>
       <hideColumn>true</hideColumn>
-      <width>100</width>
+      <width>137</width>
       <attribute>ruleflow-group</attribute>
       <reverseOrder>false</reverseOrder>
       <useRowNumber>false</useRowNumber>
@@ -40,7 +40,7 @@
           <header>Min Amount</header>
           <constraintValueType>1</constraintValueType>
           <factField>amount</factField>
-          <fieldType>Integer</fieldType>
+          <fieldType>Long</fieldType>
           <operator>&gt;=</operator>
           <parameters/>
         </condition-column52>
@@ -55,7 +55,7 @@
           <header>Max Amount</header>
           <constraintValueType>1</constraintValueType>
           <factField>amount</factField>
-          <fieldType>Integer</fieldType>
+          <fieldType>Long</fieldType>
           <operator>&lt;=</operator>
           <parameters/>
         </condition-column52>
@@ -199,14 +199,14 @@
   <imports>
     <imports>
       <org.kie.soup.project.datamodel.imports.Import>
-        <type>com.redhat.demo.qlb.loan_application.model.Applicant</type>
+        <type>com.redhat.demo.qlb.loan_pre_approval.model.Applicant</type>
       </org.kie.soup.project.datamodel.imports.Import>
       <org.kie.soup.project.datamodel.imports.Import>
-        <type>com.redhat.demo.qlb.loan_application.model.Loan</type>
+        <type>com.redhat.demo.qlb.loan_pre_approval.model.Loan</type>
       </org.kie.soup.project.datamodel.imports.Import>
     </imports>
   </imports>
-  <packageName>com.redhat.demo.qlb.loan_application.rules.approval</packageName>
+  <packageName>com.redhat.demo.qlb.loan_pre_approval.rules.pre_approval</packageName>
   <tableFormat>EXTENDED_ENTRY</tableFormat>
   <hitPolicy>NONE</hitPolicy>
   <data>
@@ -223,7 +223,7 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>approval-rules</valueString>
+        <valueString>pre-approval-rules</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -233,9 +233,9 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueNumeric class="int">1000</valueNumeric>
+        <valueNumeric class="long">1000</valueNumeric>
         <valueString></valueString>
-        <dataType>NUMERIC_INTEGER</dataType>
+        <dataType>NUMERIC_LONG</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
@@ -284,14 +284,14 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>approval-rules</valueString>
+        <valueString>pre-approval-rules</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueNumeric class="int">1000001</valueNumeric>
+        <valueNumeric class="long">1000001</valueNumeric>
         <valueString></valueString>
-        <dataType>NUMERIC_INTEGER</dataType>
+        <dataType>NUMERIC_LONG</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
@@ -345,14 +345,14 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>approval-rules</valueString>
+        <valueString>pre-approval-rules</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueNumeric class="int">1001</valueNumeric>
+        <valueNumeric class="long">1001</valueNumeric>
         <valueString></valueString>
-        <dataType>NUMERIC_INTEGER</dataType>
+        <dataType>NUMERIC_LONG</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
@@ -406,14 +406,14 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>approval-rules</valueString>
+        <valueString>pre-approval-rules</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueNumeric class="int">1001</valueNumeric>
+        <valueNumeric class="long">1001</valueNumeric>
         <valueString></valueString>
-        <dataType>NUMERIC_INTEGER</dataType>
+        <dataType>NUMERIC_LONG</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
@@ -468,20 +468,20 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>approval-rules</valueString>
+        <valueString>pre-approval-rules</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueNumeric class="int">1001</valueNumeric>
+        <valueNumeric class="long">1001</valueNumeric>
         <valueString></valueString>
-        <dataType>NUMERIC_INTEGER</dataType>
+        <dataType>NUMERIC_LONG</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueNumeric class="int">100000</valueNumeric>
+        <valueNumeric class="long">100000</valueNumeric>
         <valueString></valueString>
-        <dataType>NUMERIC_INTEGER</dataType>
+        <dataType>NUMERIC_LONG</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
@@ -531,20 +531,20 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>approval-rules</valueString>
+        <valueString>pre-approval-rules</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueNumeric class="int">100001</valueNumeric>
+        <valueNumeric class="long">100001</valueNumeric>
         <valueString></valueString>
-        <dataType>NUMERIC_INTEGER</dataType>
+        <dataType>NUMERIC_LONG</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueNumeric class="int">400000</valueNumeric>
+        <valueNumeric class="long">400000</valueNumeric>
         <valueString></valueString>
-        <dataType>NUMERIC_INTEGER</dataType>
+        <dataType>NUMERIC_LONG</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
@@ -594,20 +594,20 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>approval-rules</valueString>
+        <valueString>pre-approval-rules</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueNumeric class="int">100001</valueNumeric>
+        <valueNumeric class="long">100001</valueNumeric>
         <valueString></valueString>
-        <dataType>NUMERIC_INTEGER</dataType>
+        <dataType>NUMERIC_LONG</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueNumeric class="int">400000</valueNumeric>
+        <valueNumeric class="long">400000</valueNumeric>
         <valueString></valueString>
-        <dataType>NUMERIC_INTEGER</dataType>
+        <dataType>NUMERIC_LONG</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
@@ -657,20 +657,20 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>approval-rules</valueString>
+        <valueString>pre-approval-rules</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueNumeric class="int">400001</valueNumeric>
+        <valueNumeric class="long">400001</valueNumeric>
         <valueString></valueString>
-        <dataType>NUMERIC_INTEGER</dataType>
+        <dataType>NUMERIC_LONG</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueNumeric class="int">500000</valueNumeric>
+        <valueNumeric class="long">500000</valueNumeric>
         <valueString></valueString>
-        <dataType>NUMERIC_INTEGER</dataType>
+        <dataType>NUMERIC_LONG</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
@@ -720,20 +720,20 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>approval-rules</valueString>
+        <valueString>pre-approval-rules</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueNumeric class="int">400001</valueNumeric>
+        <valueNumeric class="long">400001</valueNumeric>
         <valueString></valueString>
-        <dataType>NUMERIC_INTEGER</dataType>
+        <dataType>NUMERIC_LONG</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueNumeric class="int">500000</valueNumeric>
+        <valueNumeric class="long">500000</valueNumeric>
         <valueString></valueString>
-        <dataType>NUMERIC_INTEGER</dataType>
+        <dataType>NUMERIC_LONG</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
@@ -783,20 +783,20 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>approval-rules</valueString>
+        <valueString>pre-approval-rules</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueNumeric class="int">500001</valueNumeric>
+        <valueNumeric class="long">500001</valueNumeric>
         <valueString></valueString>
-        <dataType>NUMERIC_INTEGER</dataType>
+        <dataType>NUMERIC_LONG</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueNumeric class="int">1000000</valueNumeric>
+        <valueNumeric class="long">1000000</valueNumeric>
         <valueString></valueString>
-        <dataType>NUMERIC_INTEGER</dataType>
+        <dataType>NUMERIC_LONG</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
@@ -846,20 +846,20 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>approval-rules</valueString>
+        <valueString>pre-approval-rules</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueNumeric class="int">500001</valueNumeric>
+        <valueNumeric class="long">500001</valueNumeric>
         <valueString></valueString>
-        <dataType>NUMERIC_INTEGER</dataType>
+        <dataType>NUMERIC_LONG</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueNumeric class="int">1000000</valueNumeric>
+        <valueNumeric class="long">1000000</valueNumeric>
         <valueString></valueString>
-        <dataType>NUMERIC_INTEGER</dataType>
+        <dataType>NUMERIC_LONG</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
