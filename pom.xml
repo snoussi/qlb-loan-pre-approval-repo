@@ -5,9 +5,9 @@
   <artifactId>loan-pre-approval</artifactId>
   <version>1.0-SNAPSHOT</version>
   <name>loan-pre-approval</name>
-  <description>RHDM 7.8.1 demo - Loan Pre-approval Decision Service for Quick Loan Bank</description>
+  <description>RHDM 7.9.0 demo - Loan Pre-approval Decision Service for Quick Loan Bank</description>
   <properties>
-    <version.org.kie>7.39.0.Final-redhat-00007</version.org.kie>
+    <version.org.kie>7.44.0.Final-redhat-00003</version.org.kie>
     <maven.compiler.source>1.8</maven.compiler.source>
     <maven.compiler.target>1.8</maven.compiler.target>
   </properties>
